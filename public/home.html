@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJSASP PAYMENT-PORTAL</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <h1 class="text"> SRI JAYENDRA SARASWATHI SWAMIGAL ARTHA SASTRA PATASALA </h1>
+        <h3>99, Vedal, Kanchipuram, Tamilnadu 631561</h3>
+      </div>
+      <div class="form-box">
+        <form action="/payment" method="POST" >
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input type="text" id="vin" name="vin" placeholder="Enter Your VIN" required>
+            <input type="email" id="mail" name="email" placeholder="Enter Your Email" required>
+            <input type="tel" id="contact" name="contact" placeholder="Contact Number" required>
+        
+            <select id="paymentMethod" name="paymentMethod" required 
+             style="width: 325px;height: 40px; font-size: medium; margin-top: 10px; border-radius: 5px;">
+                <option value="" disabled selected>Select Payment Method</option>
+                <option value="full">Full Payment</option>
+                <option value="4-instalments">4 Instalments</option>
+                <option value="2-instalments">2 Instalments</option>
+            </select>
+            <input type="number" id="amount" name="amount" placeholder="Amount" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <br><br><br>
+    </div>
+  </body>
+</html>

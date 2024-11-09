@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJSASP-Login</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+        .image {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .image .text {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        form label {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        form input {
+            width: 325px;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 150px;
+            height: 40px;
+            background-color: #00af00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="/images/logo.png" alt="logo" class="logo">
+            <h1 class="text">SRI JAYENDRA SARASWATHI SWAMIGAL ARTHA SASTRA PATASALA</h1>
+            <h3>99, Vedal, Kanchipuram, Tamilnadu 631561</h3>
+        </div>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+    </div>
+</body>
+</html>

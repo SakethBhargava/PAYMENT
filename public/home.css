@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image .text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+p .text {
+  font-size: 20px;
+  margin-top: -150px;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+form {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+form input {
+  width: 300px;
+  height: 20px;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn {
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #00af00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.input {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.form-box {
+  margin-left: 32%;
+  height: 450px;
+  width: 450px;
+  border: 2px solid black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+}

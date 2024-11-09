@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .logo {
+        width: 50px;
+        height: 50px;
+      }
+      .details {
+        margin-top: 20px;
+      }
+      .details table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .details th,
+      .details td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      .details th {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="/public/images/logo.png" alt="logo" class="logo" />
+        <h1>SRI JAYENDRA SARASWATHI SWAMIGAL ARTHA SASTRA PATASALA</h1>
+        <h3>99, Vedal, Kanchipuram, Tamilnadu 631561</h3>
+        <h2>Payment Receipt</h2>
+      </div>
+      <div class="details">
+        <table>
+          <tr>
+            <th>Name:</th>
+            <td><%= user.name %></td>
+          </tr>
+          <tr>
+            <th>VIN:</th>
+            <td><%= user.vin %></td>
+          </tr>
+          <tr>
+            <th>Transaction ID:</th>
+            <td><%= payment.transactionId %></td>
+          </tr>
+          <tr>
+            <th>Date:</th>
+            <td><%= payment.date.toDateString() %></td>
+          </tr>
+          <tr>
+            <th>Payment Method:</th>
+            <td><%= user.paymentMethod %></td>
+          </tr>
+          <tr>
+            <th>Amount:</th>
+            <td><%= user.amount %></td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td><%= user.email %></td>
+          </tr>
+          <tr>
+            <th>Contact:</th>
+            <td><%= user.contact %></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
