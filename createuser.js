@@ -12,10 +12,10 @@ const User = require('./models/login');
 
 const createUser = async () => {
     const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash('24U202', salt);
+    const hashedPassword = await bcrypt.hash('21U059', salt);
 
     const user = new User({
-        username: 'sathwikakella2006@gmail.com',                                        
+        username: 'dinesh@gmail.com',                                        
         password: hashedPassword
     });
 
