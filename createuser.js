@@ -15,7 +15,7 @@ const createUser = async () => {
     const hashedPassword = await bcrypt.hash('admin', salt);
 
     const user = new User({
-        username: 'dummy@gmail.com',                                        
+        username: 'admin@gmail.com',                                        
         password: hashedPassword
     });
 
